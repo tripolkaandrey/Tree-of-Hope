@@ -1,0 +1,85 @@
+﻿/*GENERAL*/
+html{
+    min-width: 200px;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Gill Sans';
+    font-weight: 300; 
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/*HEADER*/
+.brand{
+    background-color:#11542b;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:5rem;
+    color:white;
+}
+.brand-logo{
+    height:10rem;
+}
+.brand-description{
+    color:rgb(190, 181, 181);
+    font-size:1.5rem;
+    margin:1rem;
+}
+/*FILE-UPLOADER*/
+.file-upload-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align:center;
+  width: 100%;
+  padding: 20px;
+}
+.file-upload-wrapper img {
+  margin:3rem;
+}
+.forever {
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+}
+.download-description {
+  font-size: 25px;
+  font-weight: 600;
+}
+.download-description-sm {
+  font-size: 20px;
+}
+.file-upload{
+  display:none;
+}
+.button {
+  display: inline-block;
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background: #19703d;
+  transition: 0.3s all ease;
+  border:none;
+  color:white;
+  cursor: pointer;
+  border-radius:15px;
+  margin:2rem;
+}
+.button:hover {
+  background: #228B22;
+  transition: 0.3s all ease;
+}
+
+.modal-content > svg{
+  font-size: 1rem;
+}
+
+.disable * {pointer-events: none;}

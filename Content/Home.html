@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Detection</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img class="brand-logo" src="Images/project-logo.png"></img>
+            <p class="brand-description">Analyze image files to detect types of trees</p>
+        </div>
+    </header>
+    <main>
+        <div class="file-upload-wrapper" id="drop-area">
+            <div class="file-upload-description">
+                <img src="Images/download-logo.png" id="download-logo">
+                <p class="download-description"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it
+                        here</span></p>
+                <p class="download-description-sm">Quickly see your model in action</p>
+            </div>
+            <form method="POST">
+                <input type="file" class="file-upload" data-height="1000" accept="image/*" id="file" />
+                <label for="file" class="button" id="upload-button">Choose image</label>
+            </form>
+        </div>
+
+        <div>
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+    <script src="JS/all.min.js"></script>
+</body>
+
+</html>
