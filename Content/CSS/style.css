@@ -20,6 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     padding:5rem;
     color:white;
 }
@@ -44,6 +45,7 @@ body{
 .file-upload-wrapper img {
   margin:3rem;
 }
+/*SHAKING ANIMATION*/
 .forever {
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
@@ -78,8 +80,13 @@ body{
   transition: 0.3s all ease;
 }
 
+/*Disable triggering of the animation while draging*/
+.disable * {pointer-events: none;}
+
+/*MODAL WINDOW*/
+/*preloader spinner*/
 .modal-content > svg{
   font-size: 1rem;
 }
 
-.disable * {pointer-events: none;}
+
